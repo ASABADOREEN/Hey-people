@@ -1,0 +1,19 @@
+web client was designed to send requests to the wen server and recieve responses using the url.
+Response displayed in body of web client
+
+url (uniform resourse locator) it has a uniform way of sending request, uniform format
+
+protocaol defines how some things are supposed to be doe - https
+www- domain
+resourse can be a webpage (image, file,autofile etc)
+internet is a connection btn client and serverweb is a collection of electronically linked files on different servers on a network
+
+to respond to a request, web server, standard HTTP response codes
+    if resourse requested is not available, ersponse returned is 404, web browser interpretes status codes
+    if resourse has errors or server is booting, 500=internet server errors
+    if there is no access to resource  requested, 403- access designedif access has no problems at all 200-ok
+
+    a web browser recieve response from server through codes
+     a server is a place of software (can be installed) eg IIS(microsoft) ngx, toncat, nodejs.]m apache
+
+     HTML has nothingg to do with js but js has something to do with html bcoz

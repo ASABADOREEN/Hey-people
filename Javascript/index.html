@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Accessing Elemets in the DOM</title>
+    <style>
+        html{
+            font-family:san-serif;
+            color:#333;
+        }
+        body{
+            margin: 0 auto;
+            max-width:500px;
+            padding:0 15px;
+        }
+        div, article{
+            padding:10px;
+            margin:5px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Accessing elements in the DOM</h1>
+    <h2>ID (#demo)</h2>
+    <div id="demo">
+        Access me by ID
+    </div>
+    <h2>Class (.demo)</h2>
+    <div class="demo">Access me by class (1)</div>
+    <div class="demo">Access me by class (2)</div>
+
+    <h2>Tag (article)</h2>
+    <article>Access me by Tag (1)</article>
+    <article>Access me by Tag (2)</article>
+
+    <h2>Query Selector</h2>
+    <div id="demo-query">Access me by Query.</div>
+
+    <h2>Query Selector All</h2>
+    <div class="demo-query-all">Access me by query selector all (1)</div>
+    <div class="demo-query-all">Access me by query selector all (2)</div>
+    
+
+    <script>
+        const demoId = document.getElementById('demo');
+        const demoClass = document.getElementsByClassName('demo');
+        const demoTag = document.getElementsByTagName('article');
+        const demoQuery = document.querySelector('#demo-query');
+        const demoQueryAll = document.querySelectorAll('.demo-query-all');
+
+        demoId.style.border = '2px solid purple';
+
+        for (i = 0; i <= 1; i++) {
+        demoClass[i].style.border = '3px solid orange';
+        }
+        for(i=0; i<demoTag.length; i++){
+            demoTag[i].style.border = '2px solid blue';
+        }
+        demoQuery.style.border = '2px solid blue';
+
+        demoQueryAll.forEach(query => {
+            query.style.border = '2px solid yellow';
+        })
+
+    </script>
+    
+</body>
+</html>
