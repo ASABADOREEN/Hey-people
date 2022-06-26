@@ -1,0 +1,22 @@
+form{
+    margin-left: 350px;
+    border:2px solid blue;
+    display:table;
+}
+.tableRow{
+    display:table-row;
+}
+.tableRow label{
+    display:table-cell;
+    padding:3px;
+}
+input, option{
+    font-size:14px;
+}
+.tableRow label:first-child{
+    text-align:right;
+    padding:5px;
+}
+h1{
+    text-align:center;
+}
